@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ConsoleApp3
+namespace Uazbank
 {
     internal class Program
     {
-        // ====== Donnees du compte ======
+        // ====== Initialisation ======
         static string codePin = "1234";
         static long solde = 500000;
         const int MaxTentatives = 3;
@@ -19,7 +19,7 @@ namespace ConsoleApp3
 
         static readonly List<Operation> historique = new List<Operation>();
 
-        // ====== Point d'entree ======
+        // ====== Affichage en tête ======
         static void Main(string[] args)
         {
             Console.Title = "UAZ BANKING - Distributeur Automatique";
